@@ -1,0 +1,45 @@
+.container-main{
+    margin: auto;
+    max-width: 300px;
+    background-color:rgb(222, 30, 222);
+    display: flex;
+    flex-direction: column;
+}
+
+.botao{
+    width: 100px;
+}
+/* .botao::after{
+    content:'' ;
+    display: inline-block;
+    background-image: url(./images/R.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+} */
+
+.item-lista {
+    background-color:rgb(165, 25, 178);
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ /* .check {} */
+
+.tarefa{
+    padding: 0px;
+    margin: 0px;
+}
+
+.lixeira {
+    width: 30px;
+    height: 30px;
+}
+
+.lista-de-tarefa {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
