@@ -1,3 +1,6 @@
 # Projeto Lista de Tarefas
 
-<p>Neste projeto utilizo o método localStorage para armazenar tarefas no seu serviço local, sendo assim mesmo que você atualize a página ou feche a mesma suas tarefas vão continuar do mesmo jeito.</p>
+<p>Neste projeto utilizo o método localStorage para armazenar tarefas no armazenamento local do navegador do cliente, onde mesmo que a página seja atualizada ou fechada, suas tarefas vão continuar armazenadas.</p>
+
+
+
