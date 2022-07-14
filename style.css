@@ -46,6 +46,7 @@ body {
     border: 3px outset rgb(138, 58, 213);
     transition: all;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .botao:hover {
@@ -102,6 +103,7 @@ body {
     border: 3px outset rgb(138, 58, 213);
     transition: all;
     transition-duration: 0.7s;
+    cursor: pointer;
 }
 
 .botao-limpar:hover {
