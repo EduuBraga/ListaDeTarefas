@@ -1,38 +1,128 @@
-.container-main{
-    margin: auto;
-    max-width: 300px;
-    background-color:rgb(222, 30, 222);
-    display: flex;
-    flex-direction: column;
+/* ===== BODY ===== */
+* {
+    box-sizing: border-box;
 }
 
-.botao{
-    width: 100px;
+body {
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Teko', sans-serif;
+}
+
+/* ====== CONTEINER PRINCIPAL ===== */
+.container-main {
+    text-align: center;
+    margin: auto;
+    max-width: 350px;
+    background-color: rgba(207, 33, 207, 0.55);
+
+}
+
+/* ===== HEADER ===== */
+.container-header>h1 {
+    margin: 10px 0px 10px 10px;
+    padding-top: 10px;
+    letter-spacing: 1.5px;
+    font-size: 35px;
+}
+
+/* ===== CONTAINER INPUT ==== */
+.container-input {
+    margin: auto;
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.input {
+    border: 1px solid black;
+    width: 77%;
+    padding: 10px;
+}
+
+.botao {
+    border: 3px outset rgb(138, 58, 213);
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.botao:hover {
+    background-color: rgb(142, 55, 224);
+}
+
+.botao::after {
+    content: '';
+    background-image: url(./images/mais.PNG);
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 5px 2px 2px 2px;
+}
+
+/* ===== LISTA DE TAREFAS ===== */
+.lista-de-tarefa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .item-lista {
-    padding: 3px;
-    background-color:rgb(165, 25, 178);
-    width: 280px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 10px;
+    padding: 5px;
+    background-color: white;
+    border: 1px inset black;
+    width: 90%;
 }
 
-.item-lista > p {
-    padding: 0px;
+.item-lista>p {
+    font-size: 18px;
     margin: 0px;
 }
 
-
 .lixeira {
     width: 30px;
-    height: 30px;
 }
 
-.lista-de-tarefa {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+/* ===== BOTÃO LIMPAR TUDO ===== */
 
+.botao-limpar {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 10px 0px 10px 0px;
+    padding: 3px 5px 3px 5px;
+    border: 3px outset rgb(138, 58, 213);
+    transition: all;
+    transition-duration: 0.7s;
+}
+
+.botao-limpar:hover {
+    background-color: rgb(142, 55, 224);
+    color: white;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    letter-spacing: 0.3px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+footer > h3{
+    margin: 4px;
+}
+.logos{
+    width: 26px;
+    margin-left: 10px;
+}
+.link{
+    color: white;
 }
