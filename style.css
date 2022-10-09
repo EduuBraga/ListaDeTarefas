@@ -29,17 +29,35 @@ body {
 }
 
 /* ===== CONTAINER INPUT ==== */
-.container-input {
-    margin: auto;
+.form {
+    margin: 0 auto;
+    width: 90%;
     display: flex;
-    width: 95%;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .input {
     border: 1px solid black;
     width: 77%;
     padding: 10px;
+}
+
+@keyframes Colors {
+    0% {
+        border: 2px solid #8a3ad5;
+    }25% {
+        border: 2px solid #000000;
+    }50% {
+        border: 2px solid #8a3ad5;
+    }100% {
+        border: 2px solid #000000;
+    }
+}
+
+.input:focus {
+    outline: none;
+    animation: Colors 4s linear infinite;
 }
 
 .botao {
@@ -89,6 +107,7 @@ body {
 
 .lixeira {
     width: 30px;
+    cursor: pointer;
 }
 
 /* ===== BOTÃO LIMPAR TUDO ===== */
@@ -112,19 +131,22 @@ body {
 }
 
 /* ===== FOOTER ===== */
-footer{
+footer {
     letter-spacing: 0.3px;
     color: white;
     margin-top: 20px;
     text-align: center;
 }
-footer > h3{
+
+footer>h3 {
     margin: 4px;
 }
-.logos{
+
+.logos {
     width: 26px;
     margin-left: 10px;
 }
-.link{
+
+.link {
     color: white;
 }
